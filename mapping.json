@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "crypto_data_point": {
+      "properties": {
+        "currency": {
+          "type": "keyword",
+          "index": "not_analyzed"
+        },
+        "datetime": {
+          "type": "date",
+          "format": "yyyy-MM-dd'T'HH:mmZ"
+        },
+        "ask": {
+          "type": "double"
+        },
+        "bid": {
+          "type": "double"
+        },
+        "last": {
+          "type": "double"
+        },
+        "high": {
+          "type": "double"
+        },
+        "low": {
+          "type": "double"
+        },
+        "volume": {
+          "type": "double"
+        },
+        "baseVolume": {
+          "type": "double"
+        },
+        "buyOrders": {
+          "type": "integer"
+        },
+        "sellOrders": {
+          "type": "integer"
+        },
+        "previousDay": {
+          "type": "double"
+        }
+      }
+    }
+  }
+}
